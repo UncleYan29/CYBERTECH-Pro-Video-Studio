@@ -8,7 +8,7 @@ CYBERTECH is an independent project built with creativity, passion, and the beli
 
 My goal is simple: to create a powerful, modern video editor that people can use without being forced to pay for essential features or subscriptions.
 
-This project is developed independently, driven by curiosity, creativity, and the desire to offer something useful to others.
+This project still in developement made it independently, driven by curiosity, creativity, and the desire to offer something useful to others.
 
 ### 🖤 My Philosophy
 
