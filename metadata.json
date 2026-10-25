@@ -1,0 +1,6 @@
+{
+  "name": "CYBERTECH Pro Video Studio",
+  "description": "Next-generation cyberpunk non-linear video editing suite with multi-track timeline, real-time FX compositor, audio mixer, and desktop engine integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,11 +1,55 @@
-<div align="center">
+# CYBERTECH Pro Video Studio
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+An independent, desktop-oriented non-linear video editing application built with React, TypeScript, and Vite, featuring a futuristic cyberpunk/neotech aesthetic inspired by holographic editing consoles.
 
-  <h1>Built with AI Studio</h2>
+## Architecture
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **UI Framework**: React 19 + TypeScript + Vite + Tailwind CSS
+- **Audio/Video Engine**: HTML5 Canvas multi-layer compositor + Web Audio API synthesizer + MediaRecorder encoder
+- **Desktop Adapter**: Platform-agnostic adapter (`src/services/desktopAdapter.ts`) supporting Tauri 2, Electron, and browser preview
+- **Project Format**: Versioned JSON schema (`.cyberproj`) supporting save, load, export, and localStorage autosave
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Getting Started
 
-</div>
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm or pnpm
+
+### Development
+```bash
+npm install
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Production Build
+```bash
+npm run build
+```
+
+### Packaging for Desktop (Tauri 2 / Electron)
+
+#### Tauri 2:
+```bash
+# Install Tauri CLI
+npm install -D @tauri-apps/cli
+npx tauri init
+npx tauri build
+```
+
+#### Electron:
+```bash
+# Package with Electron Forge
+npm run make
+```
+
+## Features
+
+- **Cyberpunk UI**: Deep charcoal surfaces, electric cyan & magenta accents, technical timecode HUD, composition guides, and safe margins.
+- **Media Vault**: Import local video, audio, and images via file picker or drag-and-drop. Built-in procedural audio/video generators.
+- **Drag & Drop System**: Drag assets directly from the Media Vault onto any timeline track.
+- **Multi-Track Timeline**: V1-V3 video tracks, A1-A2 audio tracks, draggable clips, left/right trim handles, razor split (`S`/`C`), ripple delete, clip duplicate (`Ctrl+D`), track mute/lock/visibility toggles, and zoom slider.
+- **Real-Time Preview Monitor**: Live multi-layer playback, frame stepping, timecode display, loop, volume, aspect ratio switching (16:9, 9:16 TikTok, 1:1, 21:9), and 1-click thumbnail snapshot download.
+- **Cyber Inspector**: Transform controls (position, scale, rotation, opacity, blend modes), color grading (exposure, contrast, saturation, temperature, tint), cyber effects (CRT scanlines, chromatic aberration, neon bloom, vignette), and audio pan/volume.
+- **Social Templates & Intros**: 1-click YouTube 16:9 intros, TikTok/Shorts 9:16 vertical hooks, and holographic HUD lower-thirds.
+- **Real Export Engine**: In-browser rendering pipeline producing real `.webm`/`.mp4` downloads, alongside desktop FFmpeg CLI command generation.

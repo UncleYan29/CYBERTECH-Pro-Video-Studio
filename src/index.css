@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --cyber-black: #080a0f;
+    --cyber-surface-1: #0e121a;
+    --cyber-surface-2: #141924;
+    --cyber-surface-3: #1c2333;
+    --cyber-cyan: #00f0ff;
+    --cyber-cyan-dim: #00f0ff33;
+    --cyber-magenta: #ff007f;
+    --cyber-magenta-dim: #ff007f33;
+    --cyber-purple: #9d4edd;
+    --cyber-border: #1e293b;
+  }
+
+  body {
+    background-color: #07090e;
+    color: #e2e8f0;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow: hidden;
+  }
+}
+
+.font-cyber {
+  font-family: 'Orbitron', 'Rajdhani', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.font-tech {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.font-code {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom Cyber Range Inputs */
+input[type="range"].cyber-slider {
+  appearance: none;
+  background: #141a29;
+  height: 4px;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type="range"].cyber-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background: #00f0ff;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.7);
+  transition: transform 0.1s ease;
+}
+
+input[type="range"].cyber-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090c12;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2233;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff66;
+}
+
+/* Cyber Scanline effect for video preview */
+.cyber-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 240, 255, 0.03) 50%
+  ),
+  linear-gradient(
+    90deg,
+    rgba(255, 0, 128, 0.02),
+    rgba(0, 255, 255, 0.01),
+    rgba(0, 255, 0, 0.02)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Cyber CRT flicker keyframe */
+@keyframes cyber-pulse {
+  0%, 100% { opacity: 0.98; }
+  50% { opacity: 1; }
+}
+
+.cyber-monitor-glow {
+  box-shadow: 0 0 30px -5px rgba(0, 240, 255, 0.12), inset 0 0 20px -5px rgba(0, 240, 255, 0.05);
+}
