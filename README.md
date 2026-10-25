@@ -2,6 +2,37 @@
 
 An independent, desktop-oriented non-linear video editing application built with React, TypeScript, and Vite, featuring a futuristic cyberpunk/neotech aesthetic inspired by holographic editing consoles.
 
+**An independent, open-source video editor. Free to use. Built for people, not profit.**
+
+CYBERTECH is an independent project built with creativity, passion, and the belief that useful software should be accessible to everyone.
+
+My goal is simple: to create a powerful, modern video editor that people can use without being forced to pay for essential features or subscriptions.
+
+This project is developed independently, driven by curiosity, creativity, and the desire to offer something useful to others.
+
+### 🖤 My Philosophy
+
+**It's about people, never about money.**
+
+Not everything has to be about profit. I want people to be able to use this project, create something of their own, and enjoy it without worrying about the cost.
+
+### ☕ Support the Project
+
+CYBERTECH is free to use. If you enjoy the project and would like to support its development, you can optionally buy me a coffee.
+
+There is absolutely no obligation to donate. Use the project, enjoy it, and share it with others. That's already appreciated.
+
+☕ **Buy Me a Coffee:** https://www.buymeacoffee.com/CyberTech29
+
+Every contribution is voluntary and helps support independent development.
+
+### 🚧 Status
+
+CYBERTECH is currently in development. Features, improvements, and new ideas will be introduced over time.
+
+Thank you for being here and supporting independent creators. 🖤
+
+**Built independently. Driven by creativity. Made for people.**
 ## Architecture
 
 - **UI Framework**: React 19 + TypeScript + Vite + Tailwind CSS
